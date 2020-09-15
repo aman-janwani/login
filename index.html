@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Signup</button>
+            </div>
+            <form action="#" id="login" class="input-group-login">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+              
+                <input type="text" name="username" id="username" class="input-field" placeholder="Username" required>
+                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                <input type="password" name="password" id="spassword" class="input-field" placeholder="password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form action="#" id="signup" class="input-group" onsubmit="return checkPassword(this)">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <input type="text" name="username" id="username" class="input-field" placeholder="Username" required>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <input type="email" name="email" id="email" class="input-field" placeholder="Email ID" required>
+                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                <input type="password" name="password1" id="password" class="input-field password" placeholder="password">
+                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                <input type="password" name="password2" id="Confirm password" class="input-field Confirm password" placeholder="Confirm password">
+                <input type="checkbox" class="check-box"><span>I Agree To Terms & Conditions</span>
+                <button type="submit" class="submit-btn">Signup</button>
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
